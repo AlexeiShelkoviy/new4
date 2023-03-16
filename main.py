@@ -33,7 +33,7 @@ class Student:
         self.reputation -= 0.5
 
     def to_work(self):
-        print("Должен работать")
+        print("Время работы")
         self.gladness -= 7
         self.progress += 0.1
         self.money += 20
@@ -68,10 +68,10 @@ class Student:
             print("================Отчисление================")
             self.alive = False
         elif self.gladness <= 0:
-            print("================Смерть================")
+            print("================Смерть из-зи депресси================")
             self.alive = False
         elif self.progress > 7:
-            print("================Сдал экстреном================")
+            print("================Сдал экстрен================")
             self.alive = False
         elif self.money <= 0:
             print("================Бомж================")
